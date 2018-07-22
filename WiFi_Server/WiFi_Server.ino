@@ -50,7 +50,7 @@ void loop() {
           if (currentLine.length() == 0) {
             client.println("HTTP/1.1 200 OK");
             client.println("Content-type:text/html");
-            client.println(); ´
+            client.println(); 
             client.print("<h1> Hello from the ESP32! </h1>");
             client.print("Click <a href=\"/H\">here</a> to turn the LED on pin 5 on.<br>");
             client.print("Click <a href=\"/L\">here</a> to turn the LED on pin 5 off.<br>");
@@ -80,8 +80,7 @@ void handleRequests(String currentLine) {
     Serial.print("L Request was sent. PIN on Low.");
     digitalWrite(PIN, LOW);
   } else {
-    Serial.print("Invalid request..");
-    client.stop();
+    Serial.print("Invalid request..");    
     return;
   }
 }
