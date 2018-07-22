@@ -1,2 +1,2 @@
 # ESP32
-Using the ESP WROOM 32 chip for multiple purposes
+Arduino projects for interafing with the ESP WROOM 32 chip for multiple purposes.
